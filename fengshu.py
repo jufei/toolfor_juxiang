@@ -1,6 +1,24 @@
 import os
 
 
+def is_sushu(num):
+    for i in range(2, num):
+        if num % i == 0:
+            return True
+    return False
+
+
+def get_sushu():
+    return [x for x in range(1000) if is_sushu(x)]
+
+
+print(get_sushu())
+
+
+def get_all_sub_item(num):
+    pass
+
+
 class fenshu(object):
 
     def __init__(self, value):
@@ -15,6 +33,9 @@ class fenshu(object):
 
     def __str__(self):
         return self.__repr__()
+
+    def find_subitem(self, a, b):
+        pass
 
     def __add__(self, fenshub):
         fenzi = self.fenzi * fenshub.fenmu + fenshub.fenzi * self.fenmu
