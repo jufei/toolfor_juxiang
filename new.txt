@@ -1,0 +1,13 @@
+git init
+git config --global http.proxy http://10.144.1.10:8080
+git config --global https.proxy https://10.144.1.10:8080
+git remote add origin https://github.com/jufei/toolfor_juxiang.git
+git config credential.helper store
+git config --global user.name fei.ju@nsn.com
+git config --global user.email fei.ju@nokia.com
+git pull origin master
+
+
+git clone https://github.com/jufei/toolfor_juxiang.git
+ 
+
